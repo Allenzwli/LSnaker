@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace LSnaker.UI
+namespace LSnaker.UI.Base
 {
     public class UIRoot:MonoBehaviour
     {

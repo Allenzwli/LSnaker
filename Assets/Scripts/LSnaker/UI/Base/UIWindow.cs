@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 
-namespace LSnaker.UI
+namespace LSnaker.UI.Base
 {
 
 	public class UIWindow : UIPanel

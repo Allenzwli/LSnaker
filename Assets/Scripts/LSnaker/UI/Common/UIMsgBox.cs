@@ -1,8 +1,9 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using LSnaker.UI.Base;
 
-namespace LSnaker.UI
+namespace LSnaker.UI.Common
 {
     public class UIMsgBox : UIWindow
     {
@@ -23,7 +24,7 @@ namespace LSnaker.UI
 
         protected override void OnOpen(object arg=null)
         {
-            base.Open(arg);
+            base.OnOpen(arg);
             mMsgBoxArg = arg as UIMsgBoxArg;
             ContentText.text = mMsgBoxArg.content;
             string[] btnTexts = mMsgBoxArg.btnText.Split('|');

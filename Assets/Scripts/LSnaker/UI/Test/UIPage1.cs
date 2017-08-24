@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
-using LSnaker.UI;
+using LSnaker.UI.Base;
+using LSnaker.Service.UIManager;
 
 public class UIPage1 :UIPage
 {

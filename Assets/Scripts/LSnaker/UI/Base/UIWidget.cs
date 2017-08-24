@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-namespace LSnaker.UI
+namespace LSnaker.UI.Base
 {
     
 	public class UIWidget : UIPanel

@@ -1,10 +1,11 @@
-using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 using System;
-using LSnaker.Core;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using LSnaker.Module.Base;
+using LSnaker.UI.Base;
 
-namespace LSnaker.UI
+namespace LSnaker.Service.UIManager
 {
     public class UIPageTrack
     {

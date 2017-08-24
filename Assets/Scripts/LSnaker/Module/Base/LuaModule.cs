@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace LSnaker.Core
+namespace LSnaker.Module.Base
 {
     public class LuaModule : BaseBizModule
     {

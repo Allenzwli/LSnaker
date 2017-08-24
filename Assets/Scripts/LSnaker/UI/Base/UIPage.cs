@@ -1,8 +1,9 @@
 ﻿using System;
 using UnityEngine;
 using UnityEngine.UI;
+using LSnaker.Service.UIManager;
 
-namespace LSnaker.UI
+namespace LSnaker.UI.Base
 {
     public class UIPage : UIPanel
     {
