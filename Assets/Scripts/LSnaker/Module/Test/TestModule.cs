@@ -1,6 +1,6 @@
 ﻿using System;
 using UnityEngine;
-using LSnaker.Module.Base;
+using LSnaker;
 
 
     public class ModuleA : BaseBizModule

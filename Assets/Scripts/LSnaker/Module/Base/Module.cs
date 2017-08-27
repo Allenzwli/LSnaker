@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace LSnaker.Module.Base
+namespace LSnaker
 {
     public abstract class Module
     {

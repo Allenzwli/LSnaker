@@ -2,7 +2,7 @@
 using System.Reflection;
 using UnityEngine;
 
-namespace LSnaker.Module.Base
+namespace LSnaker
 {
     public abstract class BaseBizModule : Module
     {

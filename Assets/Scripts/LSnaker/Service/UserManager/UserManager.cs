@@ -1,9 +1,7 @@
 using UnityEngine;
 using System.Collections;
-using LSnaker.Service.UserManager.Data;
-using LSnaker.Module.Base;
 
-namespace LSnaker.Service.UserManager
+namespace LSnaker
 {
     public class UserManager : ServiceModule<UserManager>
     {

@@ -1,9 +1,8 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
-using LSnaker.UI.Base;
 
-namespace LSnaker.UI.Common
+namespace LSnaker
 {
     public class UIMsgBox : UIWindow
     {

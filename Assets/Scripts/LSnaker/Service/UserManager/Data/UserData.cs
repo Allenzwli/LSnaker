@@ -2,8 +2,9 @@ using UnityEngine;
 using System.Collections;
 using ProtoBuf;
 
-namespace LSnaker.Service.UserManager.Data
+namespace LSnaker
 {
+    [ProtoContract]
     public class UserData
     {
         [ProtoMember(1)]

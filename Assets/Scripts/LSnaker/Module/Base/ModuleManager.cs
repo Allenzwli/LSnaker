@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace LSnaker.Module.Base
+namespace LSnaker
 {
     public class MessageObject
     {
@@ -24,6 +24,7 @@ namespace LSnaker.Module.Base
         //消息缓存（用于目标模块未加载完成时）
         private Dictionary<string, List<MessageObject>> mMessageCacheMap;
 
+        //程序集名-通常是名词空间
         private string mDomain;
 
         public ModuleManager()

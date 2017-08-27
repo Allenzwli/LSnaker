@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-namespace LSnaker.UI.Base
+namespace LSnaker
 {
     public static class UIRes
     {
@@ -9,6 +9,7 @@ namespace LSnaker.UI.Base
 
         public static GameObject LoadPrefab(string name)
         {
+            LDebugger.Log("UIRes::LoadPrefab ",UIResRoot+name);
             GameObject asset = Resources.Load<GameObject>(UIResRoot + name);
             return asset;
         }

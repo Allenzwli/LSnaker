@@ -1,11 +1,7 @@
 using UnityEngine;
 using System.Collections;
-using LSnaker.Module.Base;
-using LSnaker.Service.UserManager.Data;
-using LSnaker.Service.UserManager;
-using LSnaker.Service.UIManager;
 
-namespace LSnaker.Module.Login
+namespace LSnaker
 {
 	public class LoginModule:BaseBizModule
     {
@@ -16,15 +12,26 @@ namespace LSnaker.Module.Login
 			userData.id = id;
 			userData.name = name;
 			userData.defaultSnakeId = 1;
-			OnLoginSuccess (userData);
+
+            //TODO:后台登录逻辑
+            if(true)
+            {
+                OnLoginSuccess(userData);    
+            }
     	}
 
 		private void OnLoginSuccess(UserData userdata)
 		{
 			UserManager.Instance.UpdateMainUserData (userdata);
+
+            //保存配置文件
 			GameConfig.Config.MainUserData = UserManager.Instance.MainUserData;
 			GameConfig.Save ();
+
+            //发送全局事件
 			GlobalEvent.OnLoginEvent.Invoke (true);
+
+            //UI跳转
 			UIManager.Instance.EnterMainPage ();
 		}
 	}

@@ -1,6 +1,6 @@
 using UnityEngine;
 using System.Collections;
-using LSnaker.UI.Base;
+using LSnaker;
 
 public class UIWidget1 : UIWidget
 {

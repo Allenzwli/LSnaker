@@ -1,9 +1,7 @@
 using UnityEngine;
 using System.Collections;
-using LSnaker.UI.Common;
-using LSnaker.Service.UIManager;
 
-namespace LSnaker.UI.Base
+namespace LSnaker
 {
     public static class UIAPI
     {
@@ -14,7 +12,7 @@ namespace LSnaker.UI.Base
         /// <param name="title">Title.</param>
         /// <param name="content">Content.</param>
         /// <param name="btnText">Button text spilt by "|". Eg: 确定|取消|关闭</param>
-        public static UIWindow ShowMsgBox(string title, string content, string btnText, UIWindow.CloseEvent onCloseEvent)
+        public static UIWindow ShowMsgBox(string title, string content, string btnText, UIWindow.CloseEvent onCloseEvent=null)
         {
             UIMsgBox.UIMsgBoxArg arg = new UIMsgBox.UIMsgBoxArg();
             arg.content = content;

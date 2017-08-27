@@ -1,6 +1,6 @@
 using UnityEngine;
 using System.Collections;
-using LSnaker.Service.UIManager;
+using LSnaker;
 
 public class UITest : MonoBehaviour
 {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace LSnaker.Module.Base
+namespace LSnaker
 {
     public class GlobalEvent
     {

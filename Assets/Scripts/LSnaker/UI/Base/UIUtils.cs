@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-namespace LSnaker.UI.Base
+namespace LSnaker
 {
     public static class UIUtils
     {

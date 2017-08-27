@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine.Events;
 
-namespace LSnaker.Module.Base
+namespace LSnaker
 {
     public class ModuleEvent : UnityEvent<object>
     {

@@ -1,11 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
-using LSnaker.Service.UserManager.Data;
-using LSnaker.UI.Base;
-using LSnaker.Module.Base;
-using LSnaker.Module.Login;
 
-namespace LSnaker.UI.Login
+namespace LSnaker
 {
 	public class UILoginPage:UIPage
 	{

@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using LSnaker.Module;
+using LSnaker;
 
 namespace LSnaker
 {
@@ -14,8 +14,30 @@ namespace LSnaker
             LDebugger.EnableLog = true;
             LDebugger.EnableSave = false;
 
-            //TestModule testModule = new TestModule ();
-            //testModule.Init ();
+            GameConfig.Init();
+
+            InitService();
+            InitBusiness();
+
+            UIManager.Instance.OpenPage(UIDef.UILoginPage);
         }
+
+        private void InitService()
+        {
+            ModuleManager.Instance.Init("LSnaker");
+
+			UIManager.Instance.Init("ui/");
+            UIManager.MainPage = UIDef.UIHomePage;
+            UIManager.MainScene = "Main";
+
+            UserManager.Instance.Init();
+        }
+
+        private void InitBusiness()
+        {
+            ModuleManager.Instance.CreateModule(ModuleDef.LoginModule);
+            ModuleManager.Instance.CreateModule(ModuleDef.HomeModule);
+        }
+
     }
 }

@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using ProtoBuf;
-using LSnaker.Service.UserManager.Data;
+using LSnaker;
 
 namespace LSnaker
 {

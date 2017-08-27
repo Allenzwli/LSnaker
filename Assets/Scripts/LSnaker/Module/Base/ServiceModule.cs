@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace LSnaker.Module.Base
+namespace LSnaker
 {
     public abstract class ServiceModule<T> : Module where T : ServiceModule<T>, new()
     {
