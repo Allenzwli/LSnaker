@@ -5,11 +5,11 @@ namespace LSnaker
 {
     public static class UIDef
     {
-        public const string UIMsgBox = "Common/UIMsgBox";
+        public const string UIMsgBox = "UIMsgBox";
 
 
-        public const string UILoginPage = "Login/UILoginPage";
-        public const string UIHomePage = "Home/UIHomePage";
+        public const string UILoginPage = "UILoginPage";
+        public const string UIHomePage = "UIHomePage";
 
     }
 }

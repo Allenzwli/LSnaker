@@ -7,12 +7,11 @@ namespace LSnaker
     {
         public static string UIResRoot = "ui/";
 
-        public static GameObject LoadPrefab(string name)
+        public static GameObject LoadPrefab(string prefabName)
         {
-            LDebugger.Log("UIRes::LoadPrefab ",UIResRoot+name);
-            GameObject asset = Resources.Load<GameObject>(UIResRoot + name);
+            LDebugger.Log("UIRes::LoadPrefab ",UIResRoot+prefabName);
+            GameObject asset = Resources.Load<GameObject>(UIResRoot + prefabName);
             return asset;
         }
-
     }
 }
